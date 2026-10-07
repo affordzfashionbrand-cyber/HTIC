@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #f9f9ff;
+  --color-surface-dim: #cfdaf2;
+  --color-surface-bright: #f9f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f0f3ff;
+  --color-surface-container: #e7eeff;
+  --color-surface-container-high: #dee8ff;
+  --color-surface-container-highest: #d8e3fb;
+  --color-on-surface: #111c2d;
+  --color-on-surface-variant: #3d4947;
+  --color-inverse-surface: #263143;
+  --color-inverse-on-surface: #ecf1ff;
+  --color-outline: #6d7a77;
+  --color-outline-variant: #bcc9c6;
+  --color-surface-tint: #145598;
+  
+  /* Primary - Dark Blue (from Text) */
+  --color-primary: #145598;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #d2e4ff;
+  --color-on-primary-container: #001c3b;
+  --color-inverse-primary: #a1c8ff;
+  --color-primary-fixed: #d2e4ff;
+  --color-primary-fixed-dim: #a1c8ff;
+  --color-on-primary-fixed: #001c3b;
+  --color-on-primary-fixed-variant: #00407a;
+
+  /* Secondary - Teal (from 'H' block) */
+  --color-secondary: #1eb495;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #a9f5e1;
+  --color-on-secondary-container: #002018;
+  --color-secondary-fixed: #a9f5e1;
+  --color-secondary-fixed-dim: #4be6c1;
+  --color-on-secondary-fixed: #002018;
+  --color-on-secondary-fixed-variant: #005140;
+
+  /* Tertiary - Yellow (from 'I' block) */
+  --color-tertiary: #f9b122;
+  --color-on-tertiary: #412d00;
+  --color-tertiary-container: #ffdea4;
+  --color-on-tertiary-container: #261900;
+  --color-tertiary-fixed: #ffdea4;
+  --color-tertiary-fixed-dim: #f9b122;
+  
+  /* Additional Brand Colors */
+  --color-brand-teal: #1eb495;
+  --color-brand-blue: #2e9bd7;
+  --color-brand-yellow: #f9b122;
+  --color-brand-gray: #9ba1a6;
+  --color-brand-darkblue: #145598;
+
+
+  
+  --font-sans: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-on-surface);
+  background-color: var(--color-surface);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar for sleek clinical aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f0f3ff;
+}
+::-webkit-scrollbar-thumb {
+  background: #bcc9c6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #145598;
+}
+

@@ -1,0 +1,8 @@
+{
+  "name": "IIT Madras HTIC MedTech Incubator",
+  "description": "Healthcare Technology Innovation Centre (HTIC-MTI) at IIT Madras Research Park. Empowering biomedical startups, clinicians, and researchers with clinical immersion, cleanrooms, and BIRAC/DST grants.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

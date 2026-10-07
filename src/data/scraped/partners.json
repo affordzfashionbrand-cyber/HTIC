@@ -1,0 +1,42 @@
+[
+  {
+    "name": "IITM Incubation Cell",
+    "category": "Network & Ecosystem Partner",
+    "description": "Key institutional and clinical collaboration partner for HTIC MedTech Incubator.",
+    "image": "/images/home/IITMIC-logo-e1490164436990_aa4f7f.jpg",
+    "original_image_url": "https://htic.iitm.ac.in/mti/wp-content/uploads/2017/03/IITMIC-logo-e1490164436990.jpg",
+    "source_url": "https://htic.iitm.ac.in/mti/partners/"
+  },
+  {
+    "name": "UMass M2D2",
+    "category": "Network & Ecosystem Partner",
+    "description": "Key institutional and clinical collaboration partner for HTIC MedTech Incubator.",
+    "image": "/images/home/m2d2_challenge_logo-e1580805915218_033fdc.png",
+    "original_image_url": "https://htic.iitm.ac.in/mti/wp-content/uploads/2020/02/m2d2_challenge_logo-e1580805915218.png",
+    "source_url": "https://htic.iitm.ac.in/mti/partners/"
+  },
+  {
+    "name": "RTBI",
+    "category": "Network & Ecosystem Partner",
+    "description": "Key institutional and clinical collaboration partner for HTIC MedTech Incubator.",
+    "image": "/images/home/RTBI-logo-e1490164215323_468fb3.png",
+    "original_image_url": "https://htic.iitm.ac.in/mti/wp-content/uploads/2017/03/RTBI-logo-e1490164215323.png",
+    "source_url": "https://htic.iitm.ac.in/mti/partners/"
+  },
+  {
+    "name": "IITM Bio-incubator",
+    "category": "Network & Ecosystem Partner",
+    "description": "Key institutional and clinical collaboration partner for HTIC MedTech Incubator.",
+    "image": "/images/home/bio-incubator-logo-e1490164726616_a1d76e.jpg",
+    "original_image_url": "https://htic.iitm.ac.in/mti/wp-content/uploads/2017/03/bio-incubator-logo-e1490164726616.jpg",
+    "source_url": "https://htic.iitm.ac.in/mti/partners/"
+  },
+  {
+    "name": "Tamil Nadu BioNEST Cluster",
+    "category": "Network & Ecosystem Partner",
+    "description": "Key institutional and clinical collaboration partner for HTIC MedTech Incubator.",
+    "image": "/images/home/tnbiocluster_492cc7.png",
+    "original_image_url": "https://htic.iitm.ac.in/mti/wp-content/uploads/2021/05/tnbiocluster.png",
+    "source_url": "https://htic.iitm.ac.in/mti/partners/"
+  }
+]
