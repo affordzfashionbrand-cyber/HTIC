@@ -99,31 +99,6 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentTab, onOpenTourModal }
             </ul>
           </div>
 
-          {/* Col 3: Facilities & Clinical Access */}
-          <div className="space-y-4">
-            <h4 className="font-heading text-xs font-bold text-[#111c2d] uppercase tracking-wider">
-              Infrastructure & Labs
-            </h4>
-            <ul className="space-y-2 text-sm text-[#525f75]">
-              <li className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-[16px] text-[#145598] shrink-0 mt-0.5">biotech</span>
-                <span>ISO Class 7/8 Cleanrooms (Class B & C MedTech)</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-[16px] text-[#145598] shrink-0 mt-0.5">precision_manufacturing</span>
-                <span>Formlabs 3D Stereolithography & Micro-CNC</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-[16px] text-[#145598] shrink-0 mt-0.5">sensors</span>
-                <span>Keysight RF Telemetry & IEC 60601-1 Testbench</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-[16px] text-[#145598] shrink-0 mt-0.5">local_hospital</span>
-                <span>3,500+ Affiliated Clinical Trial Beds</span>
-              </li>
-            </ul>
-
-          </div>
 
           {/* Col 4: Campus Location & Direct Secretariat */}
           <div className="space-y-4">

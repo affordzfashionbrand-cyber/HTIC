@@ -40,12 +40,16 @@ export const ContactScreen: React.FC<ContactScreenProps> = ({ onOpenTour }) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    const { toast } = await import('react-hot-toast');
+    const toastId = toast.loading('Sending your message...');
+    
     try {
       const { submitToGoogleSheet } = await import('../utils/formSubmit');
       await submitToGoogleSheet('Contact Inquiries', formData);
+      toast.success('Message sent successfully!', { id: toastId });
       setFormSubmitted(true);
     } catch (error) {
-      alert('Failed to send message. Please try again.');
+      toast.error('Failed to send message. Please try again.', { id: toastId });
     } finally {
       setIsSubmitting(false);
     }

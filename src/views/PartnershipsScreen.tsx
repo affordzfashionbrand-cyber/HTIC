@@ -21,11 +21,16 @@ export const PartnershipsScreen: React.FC<PartnershipsScreenProps> = ({ onNaviga
   const handleInquirySubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    const { toast } = await import('react-hot-toast');
+    const toastId = toast.loading('Submitting partnership inquiry...');
+    
     try {
       await submitToGoogleSheet('PARTNERSHIP_INQUIRIES', inquiryData);
+      toast.success('Inquiry submitted successfully!', { id: toastId });
       setInquirySubmitted(true);
     } catch (error) {
       console.error(error);
+      toast.error('Failed to submit inquiry. Please try again.', { id: toastId });
     } finally {
       setIsSubmitting(false);
     }

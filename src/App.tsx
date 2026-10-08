@@ -14,6 +14,8 @@ import { StartupsScreen } from './views/StartupsScreen';
 import { PartnershipsScreen } from './views/PartnershipsScreen';
 import { ContactScreen } from './views/ContactScreen';
 
+import { Toaster } from 'react-hot-toast';
+
 import { STARTUPS_DATA, Startup, Program } from './data/mockData';
 
 export default function App() {
@@ -192,6 +194,9 @@ export default function App() {
         }}
         onOpenTourModal={() => setIsTourOpen(true)}
       />
+
+      {/* Global Toaster for Notifications */}
+      <Toaster position="bottom-right" toastOptions={{ duration: 4000 }} />
     </div>
   );
 }

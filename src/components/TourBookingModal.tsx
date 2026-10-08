@@ -24,11 +24,16 @@ export const TourBookingModal: React.FC<TourBookingModalProps> = ({ isOpen, onCl
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    const { toast } = await import('react-hot-toast');
+    const toastId = toast.loading('Submitting tour request...');
+    
     try {
       await submitToGoogleSheet('TOUR_BOOKINGS', formData);
+      toast.success('Tour request submitted successfully!', { id: toastId });
       setSubmitted(true);
     } catch (error) {
       console.error(error);
+      toast.error('Failed to submit request. Please try again.', { id: toastId });
     } finally {
       setIsSubmitting(false);
     }

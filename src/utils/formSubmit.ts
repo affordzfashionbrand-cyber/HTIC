@@ -12,17 +12,20 @@ export const submitToGoogleSheet = async (
   }
 
   try {
+    const searchParams = new URLSearchParams();
+    searchParams.append('formName', formName);
+    searchParams.append('timestamp', new Date().toISOString());
+    Object.entries(formData).forEach(([key, value]) => {
+      searchParams.append(key, String(value));
+    });
+
     const response = await fetch(scriptUrl, {
       method: 'POST',
-      mode: 'no-cors', // Google Apps Script requires no-cors for simple form posts from browser
+      mode: 'no-cors',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: JSON.stringify({
-        formName,
-        timestamp: new Date().toISOString(),
-        ...formData
-      }),
+      body: searchParams.toString(),
     });
 
     // Since mode is no-cors, we won't be able to read the response. 

@@ -1095,19 +1095,7 @@ export const PROGRAMS_DATA: Program[] = [
     deliverables: ['Clinical Need Dossier', 'Functional Benchtop Prototype', 'Provisional Patent Application'],
     eligibility: 'Indian citizens, biomedical engineers, medical graduates, or registered Indian startups < 3 years old.'
   },
-  {
-    id: 'birac-big',
-    title: 'BIRAC BIG',
-    subTitle: 'Biotechnology Ignition Grant for MedTech Deep-Tech Pioneers',
-    category: 'birac',
-    categoryLabel: 'BIRAC Supported',
-    grantAmount: 'Up to ₹50 Lakhs (Non-Dilutive)',
-    duration: '18 Months',
-    stageTarget: 'TRL 3 to TRL 5 (Proof of Concept to Working Prototype)',
-    description: 'Flagship sovereign grant enabling high-risk early-stage innovators to establish proof-of-concept and build working laboratory prototypes in clinical settings.',
-    deliverables: ['ISO Class Cleanroom Prototyping', 'Safety Pre-testing Reports', 'Pre-clinical validation package'],
-    eligibility: 'Individual innovators or registered private limited startups (< 5 years) with at least 51% Indian shareholding.'
-  },
+
   {
     id: 'prayas',
     title: 'DST NIDHI PRAYAS',
@@ -1330,6 +1318,90 @@ export const TEAM_DATA: TeamMember[] = [
     bio: 'Coordinating cohort onboarding, BIRAC/DST grant progress monitoring, partner hospital trial liaisons, and venture compliance reporting.',
     image: '/images/team/priya-Copy_d083ef.jpg',
     expertise: ['Incubation Management', 'Grant Compliance', 'Cohort Mentoring']
+  },
+  {
+    id: 'mohan-screening',
+    name: 'Dr.Mohanasankar Sivaprakasam',
+    role: 'Director of Healthcare Technology Innovation Centre (HTIC)',
+    department: 'Department of Electrical Engineering',
+    institution: 'IIT Madras',
+    category: 'SCREENING_COMMITTEE',
+    categoryLabel: 'Screening Committee',
+    bio: 'Associate Professor, Department of Electrical Engineering, IIT Madras. Director of Healthcare Technology Innovation Centre (HTIC)',
+    image: '/images/team/Dr_-Mohan_184f76.png',
+    expertise: ['Biomedical Instrumentation', 'Cardiovascular Telemetry', 'Clinical Translation']
+  },
+  {
+    id: 'raju-venkatraman',
+    name: 'Raju Venkatraman',
+    role: 'Managing Director & CEO',
+    department: 'Medall Healthcare Pvt. Ltd.',
+    institution: 'Medall Healthcare Pvt. Ltd.',
+    category: 'SCREENING_COMMITTEE',
+    categoryLabel: 'Screening Committee',
+    bio: 'Managing Director & CEO of Medall Healthcare Pvt. Ltd.',
+    image: '/images/team/Raju_ba6559.jpg',
+    expertise: ['Healthcare Management', 'Business Strategy', 'Entrepreneurship']
+  },
+  {
+    id: 'gs-bhuvaneshwar',
+    name: 'Dr.G.S Bhuvaneshwar',
+    role: 'Independent Consultant Medical Devices',
+    department: 'Design, development, testing & QMS',
+    institution: 'Independent Consultant',
+    category: 'SCREENING_COMMITTEE',
+    categoryLabel: 'Screening Committee',
+    bio: 'Independent Consultant Medical Devices - Design, development, testing & QMS',
+    image: '/images/team/Dr_GSB__bfe284.jpg',
+    expertise: ['Medical Devices Design', 'Development & Testing', 'QMS']
+  },
+  {
+    id: 'seshadri-premkumar',
+    name: 'Seshadri Premkumar',
+    role: 'Former Executive Vice Chairman & Managing Director',
+    department: 'HCL Infosystems Ltd.',
+    institution: 'HCL Infosystems Ltd.',
+    category: 'SCREENING_COMMITTEE',
+    categoryLabel: 'Screening Committee',
+    bio: 'Former Executive Vice Chairman & Managing Director, HCL Infosystems Ltd.',
+    image: '/images/team/Seshadhri_1713bf.jpg',
+    expertise: ['Corporate Leadership', 'IT Services', 'Strategic Planning']
+  },
+  {
+    id: 'senthil-nathan',
+    name: 'Senthil Nathan',
+    role: 'IITM Incubation Board Member & CTO',
+    department: 'Findmeashoe.com',
+    institution: 'Findmeashoe.com',
+    category: 'SCREENING_COMMITTEE',
+    categoryLabel: 'Screening Committee',
+    bio: 'IITM Incubation board member & Chief Technology Officer of Findmeashoe.com',
+    image: '/images/team/Senthil_e321f9.jpg',
+    expertise: ['Technology Innovation', 'Incubation Strategy', 'E-commerce']
+  },
+  {
+    id: 'vr-muraleedharan',
+    name: 'Dr. V R Muraleedharan',
+    role: 'Professor in-charge',
+    department: 'Centre for Technology and Policy',
+    institution: 'IIT Madras',
+    category: 'SCREENING_COMMITTEE',
+    categoryLabel: 'Screening Committee',
+    bio: 'Professor in-charge, Centre for Technology and Policy, IIT Madras',
+    image: '/images/team/Dr_Murali_032c92.jpg',
+    expertise: ['Technology Policy', 'Health Economics', 'Policy Research']
+  },
+  {
+    id: 'ravishankar-screening',
+    name: 'Dr. Ravishankar Ramanathan',
+    role: 'Chief Executive Officer (CEO)',
+    department: 'HTIC MedTech Incubator',
+    institution: 'IIT Madras Research Park',
+    category: 'SCREENING_COMMITTEE',
+    categoryLabel: 'Screening Committee',
+    bio: 'Chief Executive Officer (CEO)',
+    image: '/images/team/Ravishankar_410b2e.jpeg',
+    expertise: ['Executive Operations', 'Venture Acceleration', 'Industrial Technology Alliances']
   }
 ];
 

@@ -132,15 +132,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span className="material-symbols-outlined text-[20px] sm:text-[22px]">search</span>
           </button>
 
-          {/* Quick Eligibility Tool Button */}
-          <button
-            onClick={onOpenEligibility}
-            className="hidden lg:inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-[#145598] bg-[#f0f3ff] border border-[#bcc9c6]/40 rounded-lg hover:bg-[#e7eeff] transition-all cursor-pointer"
-          >
-            <span className="material-symbols-outlined text-[16px]">verified</span>
-            <span>Check TRL Level</span>
-          </button>
-
           {/* Apply Primary CTA */}
           <button
             onClick={handleApplyClick}
@@ -178,16 +169,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             })}
           </nav>
           <div className="pt-3 border-t border-[#bcc9c6]/20 mt-3 flex flex-col gap-2">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenEligibility();
-              }}
-              className="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-[#f0f3ff] text-[#145598] text-xs font-semibold rounded-lg border border-[#bcc9c6]/30 cursor-pointer"
-            >
-              <span className="material-symbols-outlined text-[16px]">verified</span>
-              <span>TRL Eligibility Assessment</span>
-            </button>
             <button
               onClick={handleApplyClick}
               className="w-full flex items-center justify-center gap-2 py-3 px-4 bg-[#145598] text-white text-sm font-semibold rounded-lg shadow-sm hover:bg-[#00407a] cursor-pointer"

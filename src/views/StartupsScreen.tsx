@@ -227,54 +227,30 @@ export const StartupsScreen: React.FC<StartupsScreenProps> = ({
               {filteredStartups.map((startup) => (
                 <div
                   key={startup.id}
-                  className="bg-white border border-[#bcc9c6]/30 hover:border-[#1eb495] rounded-2xl shadow-xs hover:shadow-md transition-all flex flex-col justify-between p-6 group cursor-pointer"
-                  onClick={() => onOpenStartupModal(startup)}
+                  className="bg-white border border-[#bcc9c6]/30 hover:border-[#1eb495] rounded-2xl shadow-xs hover:shadow-md transition-all flex flex-col items-center justify-center p-6 sm:p-8 group cursor-pointer text-center min-h-[240px]"
+                  onClick={() => {
+                    if (startup.website) {
+                      window.open(startup.website, '_blank');
+                    } else {
+                      onOpenStartupModal(startup);
+                    }
+                  }}
                 >
-                  <div>
-                    <div className="flex items-start justify-between gap-3 mb-3">
-                      <div className="w-12 h-12 rounded-xl bg-[#e8fdf8] flex items-center justify-center font-heading text-base font-bold text-[#1eb495] shrink-0 group-hover:bg-[#1eb495] group-hover:text-white transition-colors overflow-hidden border border-[#bcc9c6]/30">
-                        {startup.logo ? (
-                          <img src={startup.logo} alt={startup.name} className="w-full h-full object-contain p-1" />
-                        ) : (
-                          startup.initials
-                        )}
-                      </div>
-                      <span className="inline-flex items-center px-2.5 py-0.5 rounded text-[11px] font-semibold bg-[#a9f5e1] text-[#1eb495]">
-                        {startup.stage}
-                      </span>
-                    </div>
-
-                    <h3 className="font-heading font-bold text-base text-[#111c2d] group-hover:text-[#1eb495] transition-colors leading-snug">
-                      {startup.name}
-                    </h3>
-                    <p className="text-xs font-semibold text-[#1eb495] mt-1">
-                      {startup.sectorLabel}
-                    </p>
-
-                    <p className="text-xs text-[#525f75] mt-2.5 line-clamp-3 leading-relaxed">
-                      {startup.tagline}
-                    </p>
-
-                    <div className="mt-3 p-2.5 rounded-lg bg-[#e8fdf8] text-[11px] text-[#525f75] flex items-center gap-1.5">
-                      <span className="material-symbols-outlined text-[#1eb495] text-[16px]">
-                        verified
-                      </span>
-                      <span className="font-medium truncate">{startup.impactMetric}</span>
-                    </div>
+                  <div className="w-20 h-20 mb-4 rounded-xl bg-[#e8fdf8] flex items-center justify-center font-heading text-3xl font-bold text-[#1eb495] shrink-0 group-hover:bg-[#1eb495] group-hover:text-white transition-colors overflow-hidden border border-[#bcc9c6]/30">
+                    {startup.logo ? (
+                      <img src={startup.logo} alt={startup.name} className="w-full h-full object-contain p-2 bg-white" />
+                    ) : (
+                      startup.initials
+                    )}
                   </div>
-
-                  <div className="mt-5 pt-3 border-t border-[#bcc9c6]/20 flex items-center justify-between text-xs">
-                    <span className="text-[#525f75]">{startup.patentStatus}</span>
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        onOpenStartupModal(startup);
-                      }}
-                      className="inline-flex items-center gap-1 text-[#1eb495] font-heading font-bold hover:underline"
-                    >
-                      <span>View Profile</span>
-                      <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-                    </button>
+                  
+                  <h3 className="font-heading font-bold text-base sm:text-lg text-[#111c2d] group-hover:text-[#1eb495] transition-colors leading-snug line-clamp-3">
+                    {startup.name}
+                  </h3>
+                  
+                  <div className="mt-4 flex items-center justify-center text-[#1eb495] opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0">
+                    <span className="text-xs font-semibold">{startup.website ? 'Visit Website' : 'View Profile'}</span>
+                    <span className="material-symbols-outlined text-[16px] ml-1">{startup.website ? 'open_in_new' : 'arrow_forward'}</span>
                   </div>
                 </div>
               ))}
